@@ -1,0 +1,57 @@
+dataset,index,header,count
+lipophilicity,v4_olmo-2-0325-32b-instruct_llama,CMPD_CHEMBLID,0
+lipophilicity,v4_olmo-2-0325-32b-instruct_llama,Lipophilicity.csv,0
+lipophilicity,v4_dolma-v1_7_llama,CMPD_CHEMBLID,0
+lipophilicity,v4_dolma-v1_7_llama,Lipophilicity.csv,0
+lipophilicity,v4_dclm-baseline_llama,CMPD_CHEMBLID,0
+lipophilicity,v4_dclm-baseline_llama,Lipophilicity.csv,0
+lipophilicity,v4_olmo-mix-1124_llama,CMPD_CHEMBLID,0
+lipophilicity,v4_olmo-mix-1124_llama,Lipophilicity.csv,0
+lipophilicity,v4_piletrain_llama,CMPD_CHEMBLID,0
+lipophilicity,v4_piletrain_llama,Lipophilicity.csv,0
+lipophilicity,v4_rpj_llama_s4,CMPD_CHEMBLID,0
+lipophilicity,v4_rpj_llama_s4,Lipophilicity.csv,0
+lipophilicity,v4_c4train_llama,CMPD_CHEMBLID,0
+lipophilicity,v4_c4train_llama,Lipophilicity.csv,0
+bace,v4_olmo-2-0325-32b-instruct_llama,bace.csv,5
+bace,v4_olmo-2-0325-32b-instruct_llama,ChiralCenterCountAllPossible,0
+bace,v4_dolma-v1_7_llama,bace.csv,5
+bace,v4_dolma-v1_7_llama,ChiralCenterCountAllPossible,0
+bace,v4_dclm-baseline_llama,bace.csv,0
+bace,v4_dclm-baseline_llama,ChiralCenterCountAllPossible,0
+bace,v4_olmo-mix-1124_llama,bace.csv,5
+bace,v4_olmo-mix-1124_llama,ChiralCenterCountAllPossible,0
+bace,v4_piletrain_llama,bace.csv,0
+bace,v4_piletrain_llama,ChiralCenterCountAllPossible,0
+bace,v4_rpj_llama_s4,bace.csv,0
+bace,v4_rpj_llama_s4,ChiralCenterCountAllPossible,0
+bace,v4_c4train_llama,bace.csv,0
+bace,v4_c4train_llama,ChiralCenterCountAllPossible,0
+antiviral,v4_olmo-2-0325-32b-instruct_llama,ASAP Discovery,0
+antiviral,v4_olmo-2-0325-32b-instruct_llama,antiviral_potency.csv,0
+antiviral,v4_dolma-v1_7_llama,ASAP Discovery,1
+antiviral,v4_dolma-v1_7_llama,antiviral_potency.csv,0
+antiviral,v4_dclm-baseline_llama,ASAP Discovery,0
+antiviral,v4_dclm-baseline_llama,antiviral_potency.csv,0
+antiviral,v4_olmo-mix-1124_llama,ASAP Discovery,0
+antiviral,v4_olmo-mix-1124_llama,antiviral_potency.csv,0
+antiviral,v4_piletrain_llama,ASAP Discovery,0
+antiviral,v4_piletrain_llama,antiviral_potency.csv,0
+antiviral,v4_rpj_llama_s4,ASAP Discovery,0
+antiviral,v4_rpj_llama_s4,antiviral_potency.csv,0
+antiviral,v4_c4train_llama,ASAP Discovery,0
+antiviral,v4_c4train_llama,antiviral_potency.csv,0
+esol,v4_olmo-2-0325-32b-instruct_llama,measured log solubility in mols per litre,28
+esol,v4_olmo-2-0325-32b-instruct_llama,delaney-processed,15
+esol,v4_dolma-v1_7_llama,measured log solubility in mols per litre,24
+esol,v4_dolma-v1_7_llama,delaney-processed,13
+esol,v4_dclm-baseline_llama,measured log solubility in mols per litre,5
+esol,v4_dclm-baseline_llama,delaney-processed,2
+esol,v4_olmo-mix-1124_llama,measured log solubility in mols per litre,28
+esol,v4_olmo-mix-1124_llama,delaney-processed,15
+esol,v4_piletrain_llama,measured log solubility in mols per litre,0
+esol,v4_piletrain_llama,delaney-processed,0
+esol,v4_rpj_llama_s4,measured log solubility in mols per litre,1
+esol,v4_rpj_llama_s4,delaney-processed,0
+esol,v4_c4train_llama,measured log solubility in mols per litre,0
+esol,v4_c4train_llama,delaney-processed,0

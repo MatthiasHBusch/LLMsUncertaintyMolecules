@@ -1,0 +1,5 @@
+dataset,seed,n_total,n_test,corpus_filter,corpus_requirement,provisional,positions_checked,excluded_present,skipped_unknown,sizes,n_train_pool,train_pool_dedup,n_train_pool_pre_dedup,n_removed_dedup
+lipophilicity,20260907,4200,150,True,all,False,170,20,0,"[30, 60, 120, 250, 500, 1000]",4042,inchikey14 vs test set (2026-10-08),4050,8
+bace,20260907,1513,150,True,all,False,150,0,0,"[30, 60, 120, 250, 500, 1000]",1355,inchikey14 vs test set (2026-10-08),1363,8
+antiviral,20260907,1006,150,True,all,False,150,0,0,"[30, 60, 120, 250, 500, 844]",844,inchikey14 vs test set (2026-10-08),856,12
+esol,20260907,1128,150,False,all,False,150,0,0,"[30, 60, 120, 250, 500, 976]",976,inchikey14 vs test set (2026-10-08),978,2

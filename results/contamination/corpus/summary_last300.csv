@@ -1,0 +1,2 @@
+dataset,rule,index,index_tokens,n_mol,n_too_short,n_queried,n_present_any_form,pct_present_any_form,n_present_verbatim,pct_present_verbatim,n_name_present,n_row_cooccur,pct_row_cooccur,header_counts,seconds
+bace,last300,v4_piletrain_llama,0.38T,40,0,40,0,0.0,0,0.0,,0,0.0,"{""bace.csv"": 0, ""ChiralCenterCountAllPossible"": 0}",18

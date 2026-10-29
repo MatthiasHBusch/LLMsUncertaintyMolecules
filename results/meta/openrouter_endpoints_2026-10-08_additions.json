@@ -1,0 +1,2196 @@
+{
+ "fetched": "2026-10-08",
+ "source": "https://openrouter.ai/api/v1/models/<id>/endpoints (+ created from /api/v1/models)",
+ "note": "Additions of 2026-10-08 evening (gpt61sol panel swap + 8 reserves); same format as openrouter_endpoints_2026-10-08.json plus endpoint name, status and uptime at fetch time.",
+ "created": {
+  "openai/gpt-6.1-sol": "2026-09-29",
+  "openai/gpt-6-luna": "2026-09-22",
+  "openai/gpt-6-astra": "2026-09-04",
+  "z-ai/glm-5.3-flash": "2026-08-26",
+  "mistralai/mistral-large-4-0": "2026-10-06",
+  "tencent/hy4-preview": "2026-08-28",
+  "stepfun/step-5-preview": "2026-10-08",
+  "deepseek/deepseek-v4-pro-0813": "2026-08-12",
+  "qwen/qwen3.8-27b": "2026-08-14"
+ },
+ "endpoints": {
+  "openai/gpt-6.1-sol": [
+   {
+    "tag": "openai/flex",
+    "name": "OpenAI | openai/gpt-6.1-sol-20260929",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000001",
+     "completion": "0.000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000005",
+     "input_cache_write": "0.00000125",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000002",
+       "completion": "0.0000075",
+       "input_cache_read": "0.0000001",
+       "input_cache_write": "0.0000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": -5,
+    "uptime_last_30m": 0,
+    "uptime_last_1d": 62.15277777777778
+   },
+   {
+    "tag": "azure",
+    "name": "Azure | openai/gpt-6.1-sol-20260929",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000004",
+       "completion": "0.000015",
+       "input_cache_read": "0.0000002",
+       "input_cache_write": "0.000005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "openai",
+    "name": "OpenAI | openai/gpt-6.1-sol-20260929",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000004",
+       "completion": "0.000015",
+       "input_cache_read": "0.0000002",
+       "input_cache_write": "0.000005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "name": "Amazon Bedrock | openai/gpt-6.1-sol-20260929",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.000011",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000011",
+     "input_cache_write": "0.00000275",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000044",
+       "completion": "0.0000165",
+       "input_cache_read": "0.00000022",
+       "input_cache_write": "0.0000055"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 93.75
+   },
+   {
+    "tag": "azure/eu",
+    "name": "Azure | openai/gpt-6.1-sol-20260929",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.000011",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000011",
+     "input_cache_write": "0.00000275",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000044",
+       "completion": "0.0000165",
+       "input_cache_read": "0.00000022",
+       "input_cache_write": "0.0000055"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "azure/us",
+    "name": "Azure | openai/gpt-6.1-sol-20260929",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.000011",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000011",
+     "input_cache_write": "0.00000275",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000044",
+       "completion": "0.0000165",
+       "input_cache_read": "0.00000022",
+       "input_cache_write": "0.0000055"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "openai/fast",
+    "name": "OpenAI | openai/gpt-6.1-sol-20260929",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.000005",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000008",
+       "completion": "0.00003",
+       "input_cache_read": "0.0000004",
+       "input_cache_write": "0.00001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   }
+  ],
+  "openai/gpt-6-luna": [
+   {
+    "tag": "openai/flex",
+    "name": "OpenAI | openai/gpt-6-luna-20260922",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000005",
+     "completion": "0.00000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000005",
+     "input_cache_write": "0.0000000625",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000001",
+       "completion": "0.000000375",
+       "input_cache_read": "0.00000001",
+       "input_cache_write": "0.000000125"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 87.15277777777779
+   },
+   {
+    "tag": "openai",
+    "name": "OpenAI | openai/gpt-6-luna-20260922",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000002",
+       "completion": "0.00000075",
+       "input_cache_read": "0.00000002",
+       "input_cache_write": "0.00000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "azure",
+    "name": "Azure | openai/gpt-6-luna-20260922",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000002",
+       "completion": "0.00000075",
+       "input_cache_read": "0.00000002",
+       "input_cache_write": "0.00000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "azure/us",
+    "name": "Azure | openai/gpt-6-luna-20260922",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00000022",
+       "completion": "0.000000825",
+       "input_cache_read": "0.000000022",
+       "input_cache_write": "0.000000275"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 98.94657637321295
+   },
+   {
+    "tag": "azure/eu",
+    "name": "Azure | openai/gpt-6-luna-20260922",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00000022",
+       "completion": "0.000000825",
+       "input_cache_read": "0.000000022",
+       "input_cache_write": "0.000000275"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "name": "Amazon Bedrock | openai/gpt-6-luna-20260922",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00000022",
+       "completion": "0.000000825",
+       "input_cache_read": "0.000000022",
+       "input_cache_write": "0.000000275"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "openai/fast",
+    "name": "OpenAI | openai/gpt-6-luna-20260922",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.000001",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000002",
+     "input_cache_write": "0.00000025",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000004",
+       "completion": "0.0000015",
+       "input_cache_read": "0.00000004",
+       "input_cache_write": "0.0000005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   }
+  ],
+  "openai/gpt-6-astra": [
+   {
+    "tag": "openai/flex",
+    "name": "OpenAI | openai/gpt-6-astra-20260903",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000005",
+     "completion": "0.000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000005",
+     "input_cache_write": "0.00000625",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00001",
+       "completion": "0.0000375",
+       "input_cache_read": "0.000001",
+       "input_cache_write": "0.0000125"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "azure",
+    "name": "Azure | openai/gpt-6-astra-20260903",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00001",
+     "completion": "0.00005",
+     "web_search": "0.01",
+     "input_cache_read": "0.000001",
+     "input_cache_write": "0.0000125",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00002",
+       "completion": "0.000075",
+       "input_cache_read": "0.000002",
+       "input_cache_write": "0.000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "openai",
+    "name": "OpenAI | openai/gpt-6-astra-20260903",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00001",
+     "completion": "0.00005",
+     "web_search": "0.01",
+     "input_cache_read": "0.000001",
+     "input_cache_write": "0.0000125",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00002",
+       "completion": "0.000075",
+       "input_cache_read": "0.000002",
+       "input_cache_write": "0.000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "amazon-bedrock/us-west-2",
+    "name": "Amazon Bedrock | openai/gpt-6-astra-20260903",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000011",
+     "completion": "0.000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000011",
+     "input_cache_write": "0.00001375",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000022",
+       "completion": "0.0000825",
+       "input_cache_read": "0.0000022",
+       "input_cache_write": "0.0000275"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": null
+   },
+   {
+    "tag": "azure/us",
+    "name": "Azure | openai/gpt-6-astra-20260903",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000011",
+     "completion": "0.000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000011",
+     "input_cache_write": "0.00001375",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000022",
+       "completion": "0.0000825",
+       "input_cache_read": "0.0000022",
+       "input_cache_write": "0.0000275"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "openai/fast",
+    "name": "OpenAI | openai/gpt-6-astra-20260903",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00002",
+     "completion": "0.0001",
+     "web_search": "0.01",
+     "input_cache_read": "0.000002",
+     "input_cache_write": "0.000025",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00004",
+       "completion": "0.00015",
+       "input_cache_read": "0.000004",
+       "input_cache_write": "0.00005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "openai/ultrafast",
+    "name": "OpenAI | openai/gpt-6-astra-20260903",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00006",
+     "completion": "0.0003",
+     "web_search": "0.01",
+     "input_cache_read": "0.000006",
+     "input_cache_write": "0.000075",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.00012",
+       "completion": "0.00045",
+       "input_cache_read": "0.000012",
+       "input_cache_write": "0.00015"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 100
+   }
+  ],
+  "z-ai/glm-5.3-flash": [
+   {
+    "tag": "open-inference/fp4",
+    "name": "OpenInference | z-ai/glm-5.3-flash-20260826",
+    "provider": "OpenInference",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.000000032",
+     "completion": "0.000003172455",
+     "input_cache_read": "0.00000002",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.58333333333333
+   },
+   {
+    "tag": "relace",
+    "name": "Relace | z-ai/glm-5.3-flash-20260826",
+    "provider": "Relace",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000004",
+     "completion": "0.0000005",
+     "input_cache_read": "0.000000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "sail-research/us",
+    "name": "Sail Research | z-ai/glm-5.3-flash-20260826",
+    "provider": "Sail Research",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.000000045",
+     "completion": "0.0000006",
+     "input_cache_read": "0.0000000285",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.23611111111111
+   },
+   {
+    "tag": "sail-research/fp4",
+    "name": "Sail Research | z-ai/glm-5.3-flash-20260826",
+    "provider": "Sail Research",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.000000045",
+     "completion": "0.0000006",
+     "input_cache_read": "0.0000000285",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 98.81944444444444
+   },
+   {
+    "tag": "reka",
+    "name": "Reka | z-ai/glm-5.3-flash-20260826",
+    "provider": "Reka",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000006",
+     "completion": "0.000001",
+     "input_cache_read": "0.00000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "inference-net/fp4",
+    "name": "InferenceNet | z-ai/glm-5.3-flash-20260826",
+    "provider": "InferenceNet",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.000000065",
+     "completion": "0.0000005",
+     "input_cache_read": "0.000000042",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "deepinfra/fp4",
+    "name": "DeepInfra | z-ai/glm-5.3-flash-20260826",
+    "provider": "DeepInfra",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.000000075",
+     "completion": "0.00000025",
+     "input_cache_read": "0.000000015",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "novita/fp8",
+    "name": "Novita | z-ai/glm-5.3-flash-20260826",
+    "provider": "Novita",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000084",
+     "completion": "0.00000028",
+     "input_cache_read": "0.0000000168",
+     "discount": 0.44
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 88.125
+   },
+   {
+    "tag": "streamlake/fp8",
+    "name": "StreamLake | z-ai/glm-5.3-flash-20260826",
+    "provider": "StreamLake",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000087",
+     "completion": "0.00000029",
+     "input_cache_read": "0.0000000174",
+     "discount": 0.42
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 98.95833333333334
+   },
+   {
+    "tag": "gmicloud/fp8",
+    "name": "GMICloud | z-ai/glm-5.3-flash-20260826",
+    "provider": "GMICloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000009",
+     "completion": "0.0000003",
+     "input_cache_read": "0.000000018",
+     "discount": 0.4
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 97.91666666666666
+   },
+   {
+    "tag": "decart/fp4",
+    "name": "Decart | z-ai/glm-5.3-flash-20260826",
+    "provider": "Decart",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000000945",
+     "completion": "0.000000315",
+     "input_cache_read": "0.0000000189",
+     "discount": 0.37
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "wafer",
+    "name": "Wafer | z-ai/glm-5.3-flash-20260826",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "dekallm",
+    "name": "DekaLLM | z-ai/glm-5.3-flash-20260826",
+    "provider": "DekaLLM",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.000001",
+     "input_cache_read": "0.00000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 96.60014781966001
+   },
+   {
+    "tag": "near-ai/fp8",
+    "name": "Near AI | z-ai/glm-5.3-flash-20260826",
+    "provider": "Near AI",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000105",
+     "completion": "0.00000035",
+     "input_cache_read": "0.0000000245",
+     "discount": 0.3
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.93055555555556
+   },
+   {
+    "tag": "phala/nvfp4",
+    "name": "Phala | z-ai/glm-5.3-flash-20260826",
+    "provider": "Phala",
+    "quantization": "nvfp4",
+    "pricing": {
+     "prompt": "0.0000001125",
+     "completion": "0.000000375",
+     "input_cache_read": "0.0000000225",
+     "discount": 0.25
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "modal/nvfp4",
+    "name": "Modal | z-ai/glm-5.3-flash-20260826",
+    "provider": "Modal",
+    "quantization": "nvfp4",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "baseten/fp8",
+    "name": "BaseTen | z-ai/glm-5.3-flash-20260826",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.9290276792051
+   },
+   {
+    "tag": "crusoe/fp4",
+    "name": "Crusoe | z-ai/glm-5.3-flash-20260826",
+    "provider": "Crusoe",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "coreweave/nvfp4",
+    "name": "CoreWeave | z-ai/glm-5.3-flash-20260826",
+    "provider": "CoreWeave",
+    "quantization": "nvfp4",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "atlas-cloud/fp8",
+    "name": "AtlasCloud | z-ai/glm-5.3-flash-20260826",
+    "provider": "AtlasCloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 89.94668697638994
+   },
+   {
+    "tag": "fireworks",
+    "name": "Fireworks | z-ai/glm-5.3-flash-20260826",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": -2,
+    "uptime_last_30m": 90,
+    "uptime_last_1d": 98.81944444444444
+   },
+   {
+    "tag": "friendli",
+    "name": "Friendli | z-ai/glm-5.3-flash-20260826",
+    "provider": "Friendli",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 95.13888888888889
+   },
+   {
+    "tag": "siliconflow/fp8",
+    "name": "SiliconFlow | z-ai/glm-5.3-flash-20260826",
+    "provider": "SiliconFlow",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.93055555555556
+   },
+   {
+    "tag": "digitalocean",
+    "name": "DigitalOcean | z-ai/glm-5.3-flash-20260826",
+    "provider": "DigitalOcean",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 98.45288326300985
+   },
+   {
+    "tag": "together",
+    "name": "Together | z-ai/glm-5.3-flash-20260826",
+    "provider": "Together",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943717,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.65277777777779
+   },
+   {
+    "tag": "parasail/fp4",
+    "name": "Parasail | z-ai/glm-5.3-flash-20260826",
+    "provider": "Parasail",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.86111111111111
+   },
+   {
+    "tag": "baseten/fp8",
+    "name": "BaseTen | z-ai/glm-5.3-flash-20260826",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "venice",
+    "name": "Venice | z-ai/glm-5.3-flash-20260826",
+    "provider": "Venice",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.72222222222223
+   },
+   {
+    "tag": "z-ai/fp8",
+    "name": "Z.AI | z-ai/glm-5.3-flash-20260826",
+    "provider": "Z.AI",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000005",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "parasail/fast",
+    "name": "Parasail | z-ai/glm-5.3-flash-20260826",
+    "provider": "Parasail",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000001875",
+     "completion": "0.000000625",
+     "input_cache_read": "0.0000000375",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "morph/fp8",
+    "name": "Morph | z-ai/glm-5.3-flash-20260826",
+    "provider": "Morph",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.0000007",
+     "input_cache_read": "0.000000034",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 90.94707520891365
+   },
+   {
+    "tag": "inceptron/fp8",
+    "name": "Inceptron | z-ai/glm-5.3-flash-20260826",
+    "provider": "Inceptron",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000225",
+     "completion": "0.0000006",
+     "input_cache_read": "0.00000009",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 93.30323551542513
+   },
+   {
+    "tag": "fireworks/us",
+    "name": "Fireworks | z-ai/glm-5.3-flash-20260826",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000225",
+     "completion": "0.00000075",
+     "input_cache_read": "0.000000045",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 98.25889477668433
+   },
+   {
+    "tag": "cloudflare",
+    "name": "Cloudflare | z-ai/glm-5.3-flash-20260826",
+    "provider": "Cloudflare",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.000001",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.92997198879551
+   }
+  ],
+  "mistralai/mistral-large-4-0": [
+   {
+    "tag": "mistral",
+    "name": "Mistral | mistralai/mistral-large-4-0-20261006",
+    "provider": "Mistral",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000068",
+     "completion": "0.00000209",
+     "input_cache_read": "0.00000007",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   }
+  ],
+  "tencent/hy4-preview": [
+   {
+    "tag": "tencent/fp8",
+    "name": "Tencent | tencent/hy4-preview-20260827",
+    "provider": "Tencent",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000007506",
+     "completion": "0.0000022509",
+     "input_cache_read": "0.0000000378",
+     "discount": 0,
+     "overrides": [
+      {
+       "utc_start": 0,
+       "utc_end": 1600,
+       "prompt": "0.000000834",
+       "completion": "0.000002501",
+       "input_cache_read": "0.000000042"
+      },
+      {
+       "utc_start": 1600,
+       "utc_end": 0,
+       "prompt": "0.0000007506",
+       "completion": "0.0000022509",
+       "input_cache_read": "0.0000000378"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 64000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.65277777777779
+   },
+   {
+    "tag": "deepinfra/fp8",
+    "name": "DeepInfra | tencent/hy4-preview-20260827",
+    "provider": "DeepInfra",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000834",
+     "completion": "0.000002501",
+     "input_cache_read": "0.000000042",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 95.09933774834437
+   },
+   {
+    "tag": "novita/fp8",
+    "name": "Novita | tencent/hy4-preview-20260827",
+    "provider": "Novita",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000834",
+     "completion": "0.000002501",
+     "input_cache_read": "0.000000042",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 64000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "siliconflow/fp8",
+    "name": "SiliconFlow | tencent/hy4-preview-20260827",
+    "provider": "SiliconFlow",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000834",
+     "completion": "0.000002501",
+     "input_cache_read": "0.000000042",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 94.51388888888889
+   }
+  ],
+  "stepfun/step-5-preview": [
+   {
+    "tag": "stepfun/fp8",
+    "name": "StepFun | stepfun/step-5-preview-20261008",
+    "provider": "StepFun",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000001",
+     "completion": "0.0000027",
+     "input_cache_read": "0.00000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 64000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   }
+  ],
+  "deepseek/deepseek-v4-pro-0813": [
+   {
+    "tag": "relace/fp4",
+    "name": "Relace | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Relace",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000001271",
+     "completion": "0.000008",
+     "input_cache_read": "0.0000000953",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.85875706214689
+   },
+   {
+    "tag": "baidu/fp8",
+    "name": "Baidu | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Baidu",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000014124",
+     "completion": "0.00000042372",
+     "input_cache_read": "0.000000004494",
+     "discount": 0.893
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 96.66666666666667,
+    "uptime_last_1d": 95.17490952955367
+   },
+   {
+    "tag": "wafer",
+    "name": "Wafer | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000019",
+     "completion": "0.0000038",
+     "input_cache_read": "0.00000017",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "ionstream",
+    "name": "Ionstream | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Ionstream",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000037",
+     "completion": "0.00000293",
+     "input_cache_read": "0.00000015",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.375
+   },
+   {
+    "tag": "sail-research/us",
+    "name": "Sail Research | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Sail Research",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000004",
+     "completion": "0.0000043",
+     "input_cache_read": "0.000000033",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 384000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "sail-research/fp4",
+    "name": "Sail Research | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Sail Research",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000004",
+     "completion": "0.0000043",
+     "input_cache_read": "0.000000033",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 384000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "alibaba",
+    "name": "Alibaba | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000005808",
+     "completion": "0.0000017424",
+     "input_cache_read": "0.00000005808",
+     "discount": 0,
+     "overrides": [
+      {
+       "utc_start": 0,
+       "utc_end": 1400,
+       "prompt": "0.000001122",
+       "completion": "0.000003366",
+       "input_cache_read": "0.0000001122"
+      },
+      {
+       "utc_start": 1400,
+       "utc_end": 0,
+       "prompt": "0.0000005808",
+       "completion": "0.0000017424",
+       "input_cache_read": "0.00000005808"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.6875
+   },
+   {
+    "tag": "streamlake",
+    "name": "StreamLake | deepseek/deepseek-v4-pro-20260813",
+    "provider": "StreamLake",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000066",
+     "completion": "0.00000198",
+     "input_cache_read": "0.000000022",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 384000,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "deepseek",
+    "name": "DeepSeek | deepseek/deepseek-v4-pro-20260813",
+    "provider": "DeepSeek",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000066",
+     "completion": "0.00000198",
+     "input_cache_read": "0.000000022",
+     "discount": 0,
+     "overrides": [
+      {
+       "utc_days": [
+        "saturday",
+        "sunday"
+       ],
+       "prompt": "0.00000066",
+       "completion": "0.00000198",
+       "input_cache_read": "0.000000022"
+      },
+      {
+       "utc_start": 0,
+       "utc_end": 100,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000066",
+       "completion": "0.00000198",
+       "input_cache_read": "0.000000022"
+      },
+      {
+       "utc_start": 100,
+       "utc_end": 400,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000132",
+       "completion": "0.00000396",
+       "input_cache_read": "0.000000044"
+      },
+      {
+       "utc_start": 400,
+       "utc_end": 600,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000066",
+       "completion": "0.00000198",
+       "input_cache_read": "0.000000022"
+      },
+      {
+       "utc_start": 600,
+       "utc_end": 1000,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000132",
+       "completion": "0.00000396",
+       "input_cache_read": "0.000000044"
+      },
+      {
+       "utc_start": 1000,
+       "utc_end": 0,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000066",
+       "completion": "0.00000198",
+       "input_cache_read": "0.000000022"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "phala",
+    "name": "Phala | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Phala",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000957",
+     "completion": "0.0000028776",
+     "input_cache_read": "0.000000099",
+     "discount": 0.34
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.7907949790795
+   },
+   {
+    "tag": "novita/fp8",
+    "name": "Novita | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Novita",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000099",
+     "completion": "0.00000297",
+     "input_cache_read": "0.000000033",
+     "discount": 0.25
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "gmicloud/fp8",
+    "name": "GMICloud | deepseek/deepseek-v4-pro-20260813",
+    "provider": "GMICloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000001056",
+     "completion": "0.000003168",
+     "input_cache_read": "0.0000000352",
+     "discount": 0.2
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943717,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "deepinfra/fp8",
+    "name": "DeepInfra | deepseek/deepseek-v4-pro-20260813",
+    "provider": "DeepInfra",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000013",
+     "completion": "0.0000026",
+     "input_cache_read": "0.0000001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 16384,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.46164199192464
+   },
+   {
+    "tag": "coreweave/fp8",
+    "name": "CoreWeave | deepseek/deepseek-v4-pro-20260813",
+    "provider": "CoreWeave",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000131",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "atlas-cloud/fp8",
+    "name": "AtlasCloud | deepseek/deepseek-v4-pro-20260813",
+    "provider": "AtlasCloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000132",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "nebius/fp8",
+    "name": "Nebius | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Nebius",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 881100,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "parasail/fp8",
+    "name": "Parasail | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Parasail",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "together",
+    "name": "Together | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Together",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "input_cache_read": "0.00000013",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 97.40680713128039
+   },
+   {
+    "tag": "digitalocean",
+    "name": "DigitalOcean | deepseek/deepseek-v4-pro-20260813",
+    "provider": "DigitalOcean",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "siliconflow/fp8",
+    "name": "SiliconFlow | deepseek/deepseek-v4-pro-20260813",
+    "provider": "SiliconFlow",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "cloudflare",
+    "name": "Cloudflare | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Cloudflare",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000132",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 99.76958525345621
+   },
+   {
+    "tag": "venice",
+    "name": "Venice | deepseek/deepseek-v4-pro-20260813",
+    "provider": "Venice",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000165",
+     "completion": "0.00000495",
+     "input_cache_read": "0.000000165",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 32768,
+    "status": 0,
+    "uptime_last_30m": null,
+    "uptime_last_1d": 93.75
+   }
+  ],
+  "qwen/qwen3.8-27b": [
+   {
+    "tag": "reka",
+    "name": "Reka | qwen/qwen3.8-27b-20260814",
+    "provider": "Reka",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000000239",
+     "completion": "0.000002175",
+     "input_cache_read": "0.00000002",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "wafer",
+    "name": "Wafer | qwen/qwen3.8-27b-20260814",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000003",
+     "completion": "0.00000435",
+     "input_cache_read": "0.0000000198",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": -2,
+    "uptime_last_30m": 76.66666666666667,
+    "uptime_last_1d": 99.30555555555556
+   },
+   {
+    "tag": "dekallm",
+    "name": "DekaLLM | qwen/qwen3.8-27b-20260814",
+    "provider": "DekaLLM",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000049",
+     "completion": "0.000003",
+     "input_cache_read": "0.00000002",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.79123173277662
+   },
+   {
+    "tag": "darkbloom/fp4",
+    "name": "Darkbloom | qwen/qwen3.8-27b-20260814",
+    "provider": "Darkbloom",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000005",
+     "completion": "0.0000022",
+     "input_cache_read": "0.000000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 32768,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "ionstream/fp8",
+    "name": "Ionstream | qwen/qwen3.8-27b-20260814",
+    "provider": "Ionstream",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000000893",
+     "completion": "0.00000235",
+     "input_cache_read": "0.000000085",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.58041958041957
+   },
+   {
+    "tag": "phala",
+    "name": "Phala | qwen/qwen3.8-27b-20260814",
+    "provider": "Phala",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.000001875",
+     "input_cache_read": "0.0000000375",
+     "discount": 0.25
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.86111111111111
+   },
+   {
+    "tag": "deepinfra/bf16",
+    "name": "DeepInfra | qwen/qwen3.8-27b-20260814",
+    "provider": "DeepInfra",
+    "quantization": "bf16",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.000001875",
+     "input_cache_read": "0.0000000375",
+     "discount": 0.25
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "mancer/fp8",
+    "name": "Mancer 2 | qwen/qwen3.8-27b-20260814",
+    "provider": "Mancer 2",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.0000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 96.66666666666667,
+    "uptime_last_1d": 99.59432048681542
+   },
+   {
+    "tag": "akashml/fp8",
+    "name": "AkashML | qwen/qwen3.8-27b-20260814",
+    "provider": "AkashML",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000225",
+     "completion": "0.00000198",
+     "input_cache_read": "0.00000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 96.66666666666667,
+    "uptime_last_1d": 99.85443959243085
+   },
+   {
+    "tag": "parasail/fp8",
+    "name": "Parasail | qwen/qwen3.8-27b-20260814",
+    "provider": "Parasail",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000024",
+     "completion": "0.0000022",
+     "input_cache_read": "0.00000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "chutes/fp8",
+    "name": "Chutes | qwen/qwen3.8-27b-20260814",
+    "provider": "Chutes",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000024",
+     "completion": "0.0000022",
+     "input_cache_read": "0.000000024",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 99.79123173277662
+   },
+   {
+    "tag": "coreweave/fp8",
+    "name": "CoreWeave | qwen/qwen3.8-27b-20260814",
+    "provider": "CoreWeave",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000004",
+     "completion": "0.000003",
+     "input_cache_read": "0.00000015",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "novita",
+    "name": "Novita | qwen/qwen3.8-27b-20260814",
+    "provider": "Novita",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000042",
+     "completion": "0.000003",
+     "input_cache_read": "0.000000085",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "alibaba",
+    "name": "Alibaba | qwen/qwen3.8-27b-20260814",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000425",
+     "completion": "0.00000255",
+     "input_cache_read": "0.000000085",
+     "input_cache_write": "0.00000053125",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "cloudflare",
+    "name": "Cloudflare | qwen/qwen3.8-27b-20260814",
+    "provider": "Cloudflare",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000045",
+     "completion": "0.0000032",
+     "input_cache_read": "0.00000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 95.78947368421052
+   },
+   {
+    "tag": "venice/fp8",
+    "name": "Venice | qwen/qwen3.8-27b-20260814",
+    "provider": "Venice",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000045",
+     "completion": "0.0000032",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "modelrun/fp4",
+    "name": "ModelRun | qwen/qwen3.8-27b-20260814",
+    "provider": "ModelRun",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000008",
+     "completion": "0.00000525",
+     "input_cache_read": "0.00000015",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 235929,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   },
+   {
+    "tag": "cerebras/fp16",
+    "name": "Cerebras | qwen/qwen3.8-27b-20260814",
+    "provider": "Cerebras",
+    "quantization": "fp16",
+    "pricing": {
+     "prompt": "0.00000099",
+     "completion": "0.00000149",
+     "input_cache_read": "0.00000099",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 32768,
+    "status": 0,
+    "uptime_last_30m": 100,
+    "uptime_last_1d": 100
+   }
+  ]
+ }
+}

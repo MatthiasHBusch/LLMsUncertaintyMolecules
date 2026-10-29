@@ -1,0 +1,11 @@
+# Analysis, figures, tables (Python 3.11; versions of the environment that produced the results)
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+matplotlib==3.8.0
+scikit-learn==1.5.2
+rdkit==2023.9.6
+# Baselines only (src/baselines/run_baselines.py), see README.md: the cells were produced with
+# tabpfn==9.1.0 and torch==2.14.1+cpu (TabPFN, MLP ensembles; numpy 2.4.6, scipy 1.17.1,
+# scikit-learn 1.9.1, Python 3.11.17) and chemprop==2.0.0, torch==2.2.2, lightning==2.2.4 (Chemprop
+# ensembles, Python 3.11.7); every results/baselines/*.meta.json records the versions of its cell.

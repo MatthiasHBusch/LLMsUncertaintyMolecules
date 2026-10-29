@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.log
+.DS_Store
+*.aux
+# unpacked copies of the gzipped records (python src/unpack_replies.py)
+results/icl/*.jsonl
+results/contamination/corpus/cache.jsonl
+# notes written by report_icl.py --ladder / --draws
+docs/RESULTS_LADDER_R1.md
+docs/RESULTS_DRAWS.md

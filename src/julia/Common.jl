@@ -1,8 +1,8 @@
 #
 # Shared definitions for the v2 Julia runners (Run_ICL.jl, Run_ZeroShot_TestSet.jl).
 #
-# Built on the in-house library in the directory $LLM_JULIA_LIBS (LLMUtils.jl via LLMs.jl, which
-# also holds the model handles; FileWritingHelpers.jl; not part of this repository), exactly as the
+# Built on the utility library shipped in src/julia/lib/ (LLMUtils.jl via the generated LLMs.jl,
+# which sets the OpenRouter key; FileWritingHelpers.jl), exactly as the
 # memorization paper's Run_ZeroShot.jl and the transfer-learning paper's Run_*_Experiments.jl.
 #
 # One addition over the library: `ask_gpt_full` returns the FULL response (text plus usage:
@@ -18,42 +18,16 @@
 # provider.allow_fallbacks = false to the library's body (the library itself is not changed).
 #
 using CSV, DataFrames, JSON, Dates, Printf, HTTP, Random, Statistics
-# The in-house library is not part of this repository: LLM_JULIA_LIBS names its directory.
-const LLM_LIBS = get(ENV, "LLM_JULIA_LIBS") do
-    error("set LLM_JULIA_LIBS to the directory holding LLMs.jl, LLMUtils.jl, FileWritingHelpers.jl")
-end
-include(joinpath(LLM_LIBS, "LLMs.jl"))                   # -> LLMUtils.jl, key_openrouter, model handles
-include(joinpath(LLM_LIBS, "FileWritingHelpers.jl"))
+# The utility library is shipped in src/julia/lib/ (snapshot of an in-house library). lib/LLMs.jl
+# loads EnvConfig.jl + LLMUtils.jl and sets key_openrouter from OPENROUTER_API_KEY (env or root .env).
+include(joinpath(@__DIR__, "lib", "LLMs.jl"))            # -> LLMUtils.jl, key_openrouter
+include(joinpath(@__DIR__, "lib", "FileWritingHelpers.jl"))
 
 const JL_DIR = @__DIR__
 const ROOT = normpath(joinpath(JL_DIR, "..", ".."))
 const DATA_DIR = joinpath(ROOT, "data")
 const RESULTS_DIR = joinpath(ROOT, "results")
 const MEMO45_DIR = joinpath(ROOT, "src", "memo45")
-
-# OpenRouter key: the environment variable OPENROUTER_API_KEY, else the line OPENROUTER_API_KEY=... of the
-# git-ignored .env file in the repository root, replaces the library's key_openrouter. Never printed.
-function repo_env_value(name)
-    v = strip(get(ENV, name, ""))
-    isempty(v) || return String(v)
-    f = joinpath(ROOT, ".env")
-    isfile(f) || return ""
-    for line in eachline(f)
-        s = strip(line)
-        (isempty(s) || startswith(s, "#") || !occursin("=", s)) && continue
-        k, val = split(s, "="; limit=2)
-        strip(replace(k, r"^export\s+" => "")) == name || continue
-        val = strip(val)
-        if length(val) >= 2 && val[1] == val[end] && val[1] in ('"', '\'')
-            val = val[2:end-1]
-        end
-        return String(val)
-    end
-    return ""
-end
-let k = repo_env_value("OPENROUTER_API_KEY")
-    isempty(k) || (global key_openrouter = k)
-end
 
 # ------------------------------------------------------------------ datasets
 # Prompt words of blinding level 1 (real property name, real values, real SMILES), in the
@@ -315,7 +289,7 @@ function ask_gpt_full(llmaccess::LLMAccess, conversation::Vector{Tuple};
                               allow_fallbacks=allow_fallbacks)
     header = get_header(llmaccess)
     check_llm_cost_limit(llmaccess.model, estimate_tokens(conversation), max_tokens) ||
-        error("LLMUtils cost limit reached -- see LLMUtilsData/LLMCosts.json")
+        error("LLMUtils cost limit reached -- see src/julia/lib/LLMUtilsData/LLMCosts.json")
     attempts = retries + 1
     while true
         attempts -= 1
@@ -427,7 +401,7 @@ end
 
 "Cumulative OpenRouter spend recorded by the shared library, in USD (as in 45/Run_ZeroShot.jl)."
 function current_usage()
-    f = joinpath(LLM_LIBS, "LLMUtilsData", "LLMUsage.json")
+    f = joinpath(@__DIR__, "lib", "LLMUtilsData", "LLMUsage.json")
     isfile(f) || return 0.0
     try
         return Float64(get(JSON.parsefile(f), "total_cost_usd", 0.0))

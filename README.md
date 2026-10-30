@@ -17,7 +17,9 @@ that turn the replies into every result table, figure and LaTeX table of the pap
 - `src/` (Python 3.11, Julia)
   - `julia/` the runners that called the API: `Run_ICL.jl` (main experiment, reasoning ladder,
     context draws), `Run_ZeroShot_TestSet.jl` (zero-shot contamination screen), `Probe_Models.jl`
-    (effort probe), prompts `Prompts_ICL.jl` / `Prompts_ZS.jl`, shared code `Common.jl`
+    (effort probe), prompts `Prompts_ICL.jl` / `Prompts_ZS.jl`, shared code `Common.jl`;
+    `julia/lib/` the utility library they are built on (request construction, cost limit, usage
+    accounting; see below)
   - `registry/models_v2.json` model registry (OpenRouter ids, pinned providers, prices of 2026-10-08)
   - `icl_common.py` Python reference of the prompt (`check_prompt_parity.py` diffs it against the Julia runner)
   - `common.py` paths, dataset registry, split loading
@@ -80,14 +82,26 @@ reports to `docs/`; `make_figs.py` draws the full working figure set into `figs/
   `OPENROUTER_API_KEY=<key>` into a `.env` file in the repository root (git-ignored). Endpoints and
   prices refer to OpenRouter as of 2026-10-08 (`src/registry/models_v2.json`); models may have changed
   or disappeared since.
-- **Julia runners** (`src/julia/*.jl`; Julia 1.11.6; packages CSV, DataFrames, JSON, HTTP and the
-  standard libraries Dates, Printf, Random, Statistics) additionally need the in-house library
-  `LLMs.jl` / `LLMUtils.jl` / `FileWritingHelpers.jl` (request construction, cost limit, usage
-  accounting), which is **not included**. Set the environment variable `LLM_JULIA_LIBS` to the
-  directory that holds it. Unpack the replies first (`python src/unpack_replies.py`): the runners
+- **Julia runners** (`src/julia/*.jl`; Julia 1.11, the runs used 1.11.6). Packages, used by the
+  runners and the library: CSV, DataFrames, HTTP, JSON (load-tested with CSV 0.10.15,
+  DataFrames 1.8.0, HTTP 1.10.19, JSON 1.0.1) and the standard libraries Dates, Printf, Random,
+  Statistics: `julia -e 'using Pkg; Pkg.add(["CSV", "DataFrames", "HTTP", "JSON"])'`.
+  The utility library the runners are built on is included in `src/julia/lib/`: `LLMUtils.jl`
+  (request construction, cost limit, usage accounting), `FileWritingHelpers.jl`, `EnvConfig.jl`
+  (`.env` loader) and a reduced `LLMs.jl` that loads them and reads the key. It is a snapshot of an
+  in-house utility library, shipped for reproducibility (only paths, key names and comments adapted);
+  `src/julia/Common.jl` includes it directly, no further setup is needed. The key is read as above
+  (`OPENROUTER_API_KEY` from the environment or the repository-root `.env`); without it, loading
+  `Common.jl` stops with an error naming `OPENROUTER_API_KEY`.
+  **Cost limit**: before every call the library checks the accumulated spend against `limit` (USD) in
+  `src/julia/lib/LLMUtilsData/LLMCosts.json` (10000 as shipped; set it to your own budget) and adds
+  each call's cost to `src/julia/lib/LLMUtilsData/LLMUsage.json` (created at the first call,
+  git-ignored); the runners additionally stop at their per-run budget (`ICL_BUDGET`, `ZS_BUDGET`,
+  `PROBE_BUDGET`). Unpack the replies first (`python src/unpack_replies.py`): the runners
   append to `results/icl/*.jsonl` and skip the calls already stored there. Always dry-run first, e.g.
   `ICL_DRYRUN=1 julia src/julia/Run_ICL.jl` (the environment variables of each runner are listed in
-  its header).
+  its header). A dry run sends nothing, but the library still requires `OPENROUTER_API_KEY` at load
+  time; any placeholder value works for it.
 - **Baselines** (`python src/baselines/run_baselines.py --help`): TabPFN v3.5 needs `TABPFN_TOKEN` in
   the environment (or a line `TABPFN_TOKEN=<token>` in the `.env`) for the licence check of the weights
   download; the weights are licence-gated and not redistributed. Versions of the baseline runs: see

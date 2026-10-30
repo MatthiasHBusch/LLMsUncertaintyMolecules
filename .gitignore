@@ -10,3 +10,8 @@ results/contamination/corpus/cache.jsonl
 # notes written by report_icl.py --ladder / --draws
 docs/RESULTS_LADDER_R1.md
 docs/RESULTS_DRAWS.md
+# usage accounting of the Julia library (written at every API call)
+src/julia/lib/LLMUtilsData/LLMUsage.json
+src/julia/lib/LLMUtilsData/*.tmp.*
+src/julia/lib/LLMUtilsData/*.corrupt*
+src/julia/lib/LLMUtilsData/lockfile.lock

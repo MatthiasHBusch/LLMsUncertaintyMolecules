@@ -104,7 +104,7 @@ memorised the labels, and contrasted with one dataset it has (ESOL)?
 ## 4. Main experiment (`src/julia/Run_ICL.jl`, `src/julia/Prompts_ICL.jl`, `src/julia/Common.jl`)
 
 - **Implementation (decision 2026-09-08):** Julia, on the in-house LLMUtils.jl library via
-  `LLMs.jl` (model handles; in-house, not part of the repository: its directory is given by the environment variable `LLM_JULIA_LIBS`, the key by `OPENROUTER_API_KEY`) as in the memorization paper's
+  `LLMs.jl` (in this repository the library is shipped in `src/julia/lib/`, with a reduced `LLMs.jl` that only loads it and reads the key from `OPENROUTER_API_KEY`; the in-house version also held the model handles) as in the memorization paper's
   `Run_ZeroShot.jl` and the transfer-learning paper's `Run_*_Experiments.jl`; prompts as a
   placeholder dictionary filled by `fill_prompt` (`Prompts_ICL.jl`). `Common.jl::ask_gpt_full`
   reuses the library's request construction, cost limit and usage accounting but returns the

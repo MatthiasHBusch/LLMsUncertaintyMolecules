@@ -109,4 +109,4 @@ structures shared with a test molecule (`docs/EXPERIMENT_DESIGN_v2.md` section 2
 the original publications when using them.
 
 ## Licence
-Code: MIT (`LICENSE`). Data: see the original sources above.
+Code, results, figures and documentation: CC BY 4.0 (`LICENSE`). Datasets: see the original sources above.

@@ -1,0 +1,13 @@
+dataset,draw_a,draw_b,n_train_pool,overlap_first30,expected_first30,overlap_first60,expected_first60,overlap_first120,expected_first120
+lipophilicity,1,2,4042,0,0.22,1,0.89,1,3.56
+lipophilicity,1,3,4042,0,0.22,0,0.89,4,3.56
+lipophilicity,2,3,4042,0,0.22,1,0.89,5,3.56
+bace,1,2,1355,0,0.66,2,2.66,7,10.63
+bace,1,3,1355,1,0.66,3,2.66,9,10.63
+bace,2,3,1355,0,0.66,3,2.66,10,10.63
+antiviral,1,2,844,1,1.07,2,4.27,20,17.06
+antiviral,1,3,844,0,1.07,3,4.27,17,17.06
+antiviral,2,3,844,3,1.07,5,4.27,18,17.06
+esol,1,2,976,0,0.92,4,3.69,18,14.75
+esol,1,3,976,1,0.92,2,3.69,19,14.75
+esol,2,3,976,1,0.92,2,3.69,12,14.75

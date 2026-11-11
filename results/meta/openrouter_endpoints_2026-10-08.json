@@ -1,0 +1,3171 @@
+{
+ "fetched": "2026-10-08",
+ "source": "https://openrouter.ai/api/v1/models/<id>/endpoints",
+ "endpoints": {
+  "anthropic/claude-haiku-5.5": [
+   {
+    "tag": "google-vertex/global",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "input_cache_write_1h": "0.0000002",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.0000005",
+       "completion": "0.0000025",
+       "input_cache_read": "0.00000005",
+       "input_cache_write": "0.000000625",
+       "input_cache_write_1h": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "claude-on-aws",
+    "provider": "Claude Platform on AWS",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "input_cache_write_1h": "0.0000002",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.0000005",
+       "completion": "0.0000025",
+       "input_cache_read": "0.00000005",
+       "input_cache_write": "0.000000625",
+       "input_cache_write_1h": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/global",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "input_cache_write_1h": "0.0000002",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.0000005",
+       "completion": "0.0000025",
+       "input_cache_read": "0.00000005",
+       "input_cache_write": "0.000000625",
+       "input_cache_write_1h": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "anthropic",
+    "provider": "Anthropic",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "input_cache_write_1h": "0.0000002",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.0000005",
+       "completion": "0.0000025",
+       "input_cache_read": "0.00000005",
+       "input_cache_write": "0.000000625",
+       "input_cache_write_1h": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000001",
+     "input_cache_write": "0.000000125",
+     "input_cache_write_1h": "0.0000002",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.0000005",
+       "completion": "0.0000025",
+       "input_cache_read": "0.00000005",
+       "input_cache_write": "0.000000625",
+       "input_cache_write_1h": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/europe",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "input_cache_write_1h": "0.00000022",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.00000055",
+       "completion": "0.00000275",
+       "input_cache_read": "0.000000055",
+       "input_cache_write": "0.0000006875",
+       "input_cache_write_1h": "0.0000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/us",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "input_cache_write_1h": "0.00000022",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.00000055",
+       "completion": "0.00000275",
+       "input_cache_read": "0.000000055",
+       "input_cache_write": "0.0000006875",
+       "input_cache_write_1h": "0.0000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/us",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "input_cache_write_1h": "0.00000022",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.00000055",
+       "completion": "0.00000275",
+       "input_cache_read": "0.000000055",
+       "input_cache_write": "0.0000006875",
+       "input_cache_write_1h": "0.0000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "input_cache_write_1h": "0.00000022",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.00000055",
+       "completion": "0.00000275",
+       "input_cache_read": "0.000000055",
+       "input_cache_write": "0.0000006875",
+       "input_cache_write_1h": "0.0000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/eu-west-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000011",
+     "completion": "0.00000055",
+     "web_search": "0.01",
+     "input_cache_read": "0.000000011",
+     "input_cache_write": "0.0000001375",
+     "input_cache_write_1h": "0.00000022",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 100000,
+       "prompt": "0.00000055",
+       "completion": "0.00000275",
+       "input_cache_read": "0.000000055",
+       "input_cache_write": "0.0000006875",
+       "input_cache_write_1h": "0.0000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   }
+  ],
+  "anthropic/claude-sonnet-5.5": [
+   {
+    "tag": "google-vertex/global",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "input_cache_write_1h": "0.000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "input_cache_write_1h": "0.000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/global",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "input_cache_write_1h": "0.000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "claude-on-aws",
+    "provider": "Claude Platform on AWS",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "input_cache_write_1h": "0.000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "anthropic",
+    "provider": "Anthropic",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.0000025",
+     "input_cache_write_1h": "0.000004",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/us",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.000011",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000011",
+     "input_cache_write": "0.00000275",
+     "input_cache_write_1h": "0.0000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/us",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.000011",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000011",
+     "input_cache_write": "0.00000275",
+     "input_cache_write_1h": "0.0000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/europe",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.000011",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000011",
+     "input_cache_write": "0.00000275",
+     "input_cache_write_1h": "0.0000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   }
+  ],
+  "anthropic/claude-opus-5.5": [
+   {
+    "tag": "amazon-bedrock",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.000005",
+     "input_cache_write_1h": "0.000008",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/global",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.000005",
+     "input_cache_write_1h": "0.000008",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/global",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.000005",
+     "input_cache_write_1h": "0.000008",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "claude-on-aws",
+    "provider": "Claude Platform on AWS",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.000005",
+     "input_cache_write_1h": "0.000008",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "anthropic",
+    "provider": "Anthropic",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.000005",
+     "input_cache_write_1h": "0.000008",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/eu-west-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.0000055",
+     "input_cache_write_1h": "0.0000088",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.0000055",
+     "input_cache_write_1h": "0.0000088",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/us",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.0000055",
+     "input_cache_write_1h": "0.0000088",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/us",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.0000055",
+     "input_cache_write_1h": "0.0000088",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/europe",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.0000055",
+     "input_cache_write_1h": "0.0000088",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "anthropic/fast",
+    "provider": "Anthropic",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000008",
+     "completion": "0.00004",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000004",
+     "input_cache_write": "0.00001",
+     "input_cache_write_1h": "0.000016",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   }
+  ],
+  "openai/gpt-5.6-terra": [
+   {
+    "tag": "openai/flex",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000001",
+     "completion": "0.000006",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.00000125",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000002",
+       "completion": "0.000009",
+       "input_cache_read": "0.0000002",
+       "input_cache_write": "0.0000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000012",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.0000025",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000004",
+       "completion": "0.000018",
+       "input_cache_read": "0.0000004",
+       "input_cache_write": "0.000005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "openai",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000012",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.0000025",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000004",
+       "completion": "0.000018",
+       "input_cache_read": "0.0000004",
+       "input_cache_write": "0.000005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/us",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.0000132",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.00000275",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000044",
+       "completion": "0.0000198",
+       "input_cache_read": "0.00000044",
+       "input_cache_write": "0.0000055"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.0000132",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.00000275",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000044",
+       "completion": "0.0000198",
+       "input_cache_read": "0.00000044",
+       "input_cache_write": "0.0000055"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/eu",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.0000132",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000022",
+     "input_cache_write": "0.00000275",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000044",
+       "completion": "0.0000198",
+       "input_cache_read": "0.00000044",
+       "input_cache_write": "0.0000055"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "openai/fast",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.000024",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000004",
+     "input_cache_write": "0.000005",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000008",
+       "completion": "0.000036",
+       "input_cache_read": "0.0000008",
+       "input_cache_write": "0.00001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   }
+  ],
+  "google/gemini-3.8-flash": [
+   {
+    "tag": "google-ai-studio/flex",
+    "provider": "Google AI Studio",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000375",
+     "completion": "0.000001875",
+     "image": "0.000000375",
+     "audio": "0.000000375",
+     "input_audio_cache": "0.0000000375",
+     "web_search": "0.014",
+     "internal_reasoning": "0.000001875",
+     "input_cache_read": "0.0000000375",
+     "input_cache_write": "0.0000000208333333333333",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-vertex/global/flex",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000375",
+     "completion": "0.000001875",
+     "image": "0.000000375",
+     "audio": "0.000000375",
+     "input_audio_cache": "0.0000000375",
+     "web_search": "0.014",
+     "internal_reasoning": "0.000001875",
+     "input_cache_read": "0.0000000375",
+     "input_cache_write": "0.0000000208333333333333",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-ai-studio",
+    "provider": "Google AI Studio",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000075",
+     "completion": "0.00000375",
+     "image": "0.00000075",
+     "audio": "0.00000075",
+     "input_audio_cache": "0.000000075",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000375",
+     "input_cache_read": "0.000000075",
+     "input_cache_write": "0.0000000416666666666667",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-vertex/global",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000075",
+     "completion": "0.00000375",
+     "image": "0.00000075",
+     "audio": "0.00000075",
+     "input_audio_cache": "0.000000075",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000375",
+     "input_cache_read": "0.000000075",
+     "input_cache_write": "0.0000000416666666666667",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-ai-studio/priority",
+    "provider": "Google AI Studio",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000135",
+     "completion": "0.00000675",
+     "image": "0.00000135",
+     "audio": "0.00000135",
+     "input_audio_cache": "0.000000135",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000675",
+     "input_cache_read": "0.000000135",
+     "input_cache_write": "0.000000075",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-vertex/global/priority",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000135",
+     "completion": "0.00000675",
+     "image": "0.00000135",
+     "audio": "0.00000135",
+     "input_audio_cache": "0.000000135",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000675",
+     "input_cache_read": "0.000000135",
+     "input_cache_write": "0.000000075",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   }
+  ],
+  "deepseek/deepseek-v4.1-flash": [
+   {
+    "tag": "relace",
+    "provider": "Relace",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000000283",
+     "completion": "0.000001",
+     "input_cache_read": "0.00000001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "baidu/fp8",
+    "provider": "Baidu",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000000354",
+     "completion": "0.0000001416",
+     "input_cache_read": "0.000000000708",
+     "discount": 0.882
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "morph/fp8",
+    "provider": "Morph",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000045",
+     "completion": "0.0000006",
+     "input_cache_read": "0.00000001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "wafer",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000065",
+     "completion": "0.0000015",
+     "input_cache_read": "0.000000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "sail-research/fp4",
+    "provider": "Sail Research",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000008",
+     "completion": "0.0000004",
+     "input_cache_read": "0.00000001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 384000
+   },
+   {
+    "tag": "decart/fp4",
+    "provider": "Decart",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000009",
+     "completion": "0.00000018",
+     "input_cache_read": "0.000000018",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "dekallm",
+    "provider": "DekaLLM",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000012",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "ionstream",
+    "provider": "Ionstream",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000133",
+     "completion": "0.00000115",
+     "input_cache_read": "0.000000006",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "deepinfra/fp8",
+    "provider": "DeepInfra",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000014",
+     "completion": "0.00000042",
+     "input_cache_read": "0.0000000042",
+     "discount": 0.3
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "inference-net/fp8",
+    "provider": "InferenceNet",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000145",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000015",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "streamlake/fp8",
+    "provider": "StreamLake",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000003",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 384000
+   },
+   {
+    "tag": "alibaba",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000015",
+     "discount": 0,
+     "overrides": [
+      {
+       "utc_start": 0,
+       "utc_end": 1400,
+       "prompt": "0.0000003",
+       "completion": "0.0000012",
+       "input_cache_read": "0.00000003"
+      },
+      {
+       "utc_start": 1400,
+       "utc_end": 0,
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000015"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "deepseek",
+    "provider": "DeepSeek",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000015",
+     "completion": "0.0000006",
+     "input_cache_read": "0.000000003",
+     "discount": 0,
+     "overrides": [
+      {
+       "utc_days": [
+        "saturday",
+        "sunday"
+       ],
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      },
+      {
+       "utc_start": 0,
+       "utc_end": 100,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      },
+      {
+       "utc_start": 100,
+       "utc_end": 400,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.0000003",
+       "completion": "0.0000012",
+       "input_cache_read": "0.000000006"
+      },
+      {
+       "utc_start": 400,
+       "utc_end": 600,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      },
+      {
+       "utc_start": 600,
+       "utc_end": 1000,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.0000003",
+       "completion": "0.0000012",
+       "input_cache_read": "0.000000006"
+      },
+      {
+       "utc_start": 1000,
+       "utc_end": 0,
+       "utc_days": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+       ],
+       "prompt": "0.00000015",
+       "completion": "0.0000006",
+       "input_cache_read": "0.000000003"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "gmicloud/fp8",
+    "provider": "GMICloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000018",
+     "completion": "0.00000072",
+     "input_cache_read": "0.0000000036",
+     "discount": 0.4
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943717
+   },
+   {
+    "tag": "novita/fp8",
+    "provider": "Novita",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000195",
+     "completion": "0.00000078",
+     "input_cache_read": "0.0000000039",
+     "discount": 0.35
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "coreweave/fp8",
+    "provider": "CoreWeave",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.00000065",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "phala",
+    "provider": "Phala",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000021",
+     "completion": "0.00000084",
+     "input_cache_read": "0.0000000042",
+     "discount": 0.3
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "digitalocean",
+    "provider": "DigitalOcean",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000225",
+     "completion": "0.0000009",
+     "input_cache_read": "0.000000006",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "makora/fp8",
+    "provider": "Makora",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000027",
+     "completion": "0.00000115",
+     "input_cache_read": "0.000000009",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "crusoe/fp8",
+    "provider": "Crusoe",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000029",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000007",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "atlas-cloud/fp8",
+    "provider": "AtlasCloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "baseten/fp8",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000007",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "together",
+    "provider": "Together",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000006",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "siliconflow/fp8",
+    "provider": "SiliconFlow",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000006",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 393216
+   },
+   {
+    "tag": "modal",
+    "provider": "Modal",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.00000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "baseten/fp8",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000007",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "parasail/fp8",
+    "provider": "Parasail",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000006",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "fireworks",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.000000006",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "venice/fp8",
+    "provider": "Venice",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000003",
+     "completion": "0.0000012",
+     "input_cache_read": "0.0000000075",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "fireworks/us",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000045",
+     "completion": "0.0000018",
+     "input_cache_read": "0.000000009",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   }
+  ],
+  "moonshotai/kimi-k3": [
+   {
+    "tag": "relace/fp4",
+    "provider": "Relace",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000045",
+     "completion": "0.000013",
+     "input_cache_read": "0.00000045",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "wafer",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000047",
+     "completion": "0.000015",
+     "input_cache_read": "0.00000045",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "inference-net/fp4",
+    "provider": "InferenceNet",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000062",
+     "completion": "0.0000123",
+     "input_cache_read": "0.00000043",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "sail-research/fp4",
+    "provider": "Sail Research",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000084",
+     "completion": "0.0000135",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "morph/fp8",
+    "provider": "Morph",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000001085",
+     "completion": "0.000014",
+     "input_cache_read": "0.000000278",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "akashml/fp4",
+    "provider": "AkashML",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000012",
+     "completion": "0.000014",
+     "input_cache_read": "0.0000012",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "makora",
+    "provider": "Makora",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000153",
+     "completion": "0.00001275",
+     "input_cache_read": "0.000000204",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "decart/mxfp4",
+    "provider": "Decart",
+    "quantization": "mxfp4",
+    "pricing": {
+     "prompt": "0.00000243",
+     "completion": "0.00001215",
+     "input_cache_read": "0.000000243",
+     "discount": 0.19
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "phala",
+    "provider": "Phala",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000255",
+     "completion": "0.00001275",
+     "input_cache_read": "0.000000255",
+     "discount": 0.15
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "digitalocean",
+    "provider": "DigitalOcean",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000255",
+     "completion": "0.00001295",
+     "input_cache_read": "0.000000255",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "parasail/fp4",
+    "provider": "Parasail",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000026",
+     "completion": "0.000013",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "together",
+    "provider": "Together",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000027",
+     "completion": "0.0000135",
+     "input_cache_read": "0.00000027",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "wafer/us",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000028",
+     "completion": "0.000014",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "deepinfra/mxfp4",
+    "provider": "DeepInfra",
+    "quantization": "mxfp4",
+    "pricing": {
+     "prompt": "0.00000285",
+     "completion": "0.00001425",
+     "input_cache_read": "0.000000285",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "inference-net/fast",
+    "provider": "InferenceNet",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000299",
+     "completion": "0.000015",
+     "input_cache_read": "0.00000045",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 225000
+   },
+   {
+    "tag": "amazon-bedrock/us-east-2",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000003",
+     "completion": "0.000015",
+     "input_cache_read": "0.0000003",
+     "input_cache_write": "0.00000375",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "chutes/mxfp4",
+    "provider": "Chutes",
+    "quantization": "mxfp4",
+    "pricing": {
+     "prompt": "0.000003",
+     "completion": "0.000015",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65535
+   },
+   {
+    "tag": "modal/mxfp4",
+    "provider": "Modal",
+    "quantization": "mxfp4",
+    "pricing": {
+     "prompt": "0.000003",
+     "completion": "0.000015",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "fireworks",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000003",
+     "completion": "0.000015",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "baseten/fp8",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000003",
+     "completion": "0.000015",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "moonshotai/mxfp4",
+    "provider": "Moonshot AI",
+    "quantization": "mxfp4",
+    "pricing": {
+     "prompt": "0.000003",
+     "completion": "0.000015",
+     "input_cache_read": "0.0000003",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "alibaba",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000345",
+     "completion": "0.00001725",
+     "input_cache_read": "0.000000345",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "fireworks/us",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000045",
+     "completion": "0.0000225",
+     "input_cache_read": "0.00000045",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "fireworks/fast",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000045",
+     "completion": "0.0000225",
+     "input_cache_read": "0.00000045",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   }
+  ],
+  "anthropic/claude-opus-5": [
+   {
+    "tag": "claude-on-aws",
+    "provider": "Claude Platform on AWS",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000005",
+     "completion": "0.000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000005",
+     "input_cache_write": "0.00000625",
+     "input_cache_write_1h": "0.00001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/global",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000005",
+     "completion": "0.000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000005",
+     "input_cache_write": "0.00000625",
+     "input_cache_write_1h": "0.00001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000005",
+     "completion": "0.000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000005",
+     "input_cache_write": "0.00000625",
+     "input_cache_write_1h": "0.00001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/global",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000005",
+     "completion": "0.000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000005",
+     "input_cache_write": "0.00000625",
+     "input_cache_write_1h": "0.00001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "anthropic",
+    "provider": "Anthropic",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000005",
+     "completion": "0.000025",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000005",
+     "input_cache_write": "0.00000625",
+     "input_cache_write_1h": "0.00001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/eu-west-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000055",
+     "completion": "0.0000275",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000055",
+     "input_cache_write": "0.000006875",
+     "input_cache_write_1h": "0.000011",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/us",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000055",
+     "completion": "0.0000275",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000055",
+     "input_cache_write": "0.000006875",
+     "input_cache_write_1h": "0.000011",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/us",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000055",
+     "completion": "0.0000275",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000055",
+     "input_cache_write": "0.000006875",
+     "input_cache_write_1h": "0.000011",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "google-vertex/europe",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000055",
+     "completion": "0.0000275",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000055",
+     "input_cache_write": "0.000006875",
+     "input_cache_write_1h": "0.000011",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000055",
+     "completion": "0.0000275",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000055",
+     "input_cache_write": "0.000006875",
+     "input_cache_write_1h": "0.000011",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "anthropic/fast",
+    "provider": "Anthropic",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00001",
+     "completion": "0.00005",
+     "web_search": "0.01",
+     "input_cache_read": "0.000001",
+     "input_cache_write": "0.0000125",
+     "input_cache_write_1h": "0.00002",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   }
+  ],
+  "openai/gpt-5.6-sol": [
+   {
+    "tag": "openai/flex",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000001",
+     "completion": "0.000005",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000001",
+     "input_cache_write": "0.00000125",
+     "discount": 0.5,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000002",
+       "completion": "0.0000075",
+       "input_cache_read": "0.0000002",
+       "input_cache_write": "0.0000025"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "openai",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.00001",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000002",
+     "input_cache_write": "0.0000025",
+     "discount": 0.5,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000004",
+       "completion": "0.000015",
+       "input_cache_read": "0.0000004",
+       "input_cache_write": "0.000005"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "openai/fast",
+    "provider": "OpenAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000004",
+     "input_cache_write": "0.000005",
+     "discount": 0.5,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000008",
+       "completion": "0.00003",
+       "input_cache_read": "0.0000008",
+       "input_cache_write": "0.00001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.00002",
+     "web_search": "0.01",
+     "input_cache_read": "0.0000004",
+     "input_cache_write": "0.000005",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.000008",
+       "completion": "0.00003",
+       "input_cache_read": "0.0000008",
+       "input_cache_write": "0.00001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/us",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000044",
+     "input_cache_write": "0.0000055",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000088",
+       "completion": "0.000033",
+       "input_cache_read": "0.00000088",
+       "input_cache_write": "0.000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "amazon-bedrock/us-east-1",
+    "provider": "Amazon Bedrock",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000044",
+     "input_cache_write": "0.0000055",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000088",
+       "completion": "0.000033",
+       "input_cache_read": "0.00000088",
+       "input_cache_write": "0.000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "azure/eu",
+    "provider": "Azure",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000044",
+     "completion": "0.000022",
+     "web_search": "0.01",
+     "input_cache_read": "0.00000044",
+     "input_cache_write": "0.0000055",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 272000,
+       "prompt": "0.0000088",
+       "completion": "0.000033",
+       "input_cache_read": "0.00000088",
+       "input_cache_write": "0.000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   }
+  ],
+  "google/gemini-3.6-flash": [
+   {
+    "tag": "google-vertex/global/flex",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000375",
+     "completion": "0.000001875",
+     "image": "0.000000375",
+     "audio": "0.000000375",
+     "input_audio_cache": "0.0000000375",
+     "web_search": "0.014",
+     "internal_reasoning": "0.000001875",
+     "input_cache_read": "0.0000000375",
+     "input_cache_write": "0.0000000208333333333333",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-ai-studio/flex",
+    "provider": "Google AI Studio",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000375",
+     "completion": "0.000001875",
+     "image": "0.000000375",
+     "audio": "0.000000375",
+     "input_audio_cache": "0.0000000375",
+     "web_search": "0.014",
+     "internal_reasoning": "0.000001875",
+     "input_cache_read": "0.0000000375",
+     "input_cache_write": "0.0000000208333333333333",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-ai-studio",
+    "provider": "Google AI Studio",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000075",
+     "completion": "0.00000375",
+     "image": "0.00000075",
+     "audio": "0.00000075",
+     "input_audio_cache": "0.000000075",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000375",
+     "input_cache_read": "0.000000075",
+     "input_cache_write": "0.0000000416666666666667",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-vertex/global",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000075",
+     "completion": "0.00000375",
+     "image": "0.00000075",
+     "audio": "0.00000075",
+     "input_audio_cache": "0.000000075",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000375",
+     "input_cache_read": "0.000000075",
+     "input_cache_write": "0.0000000416666666666667",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-vertex/global/priority",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000135",
+     "completion": "0.00000675",
+     "image": "0.00000135",
+     "audio": "0.00000135",
+     "input_audio_cache": "0.000000135",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000675",
+     "input_cache_read": "0.000000135",
+     "input_cache_write": "0.000000075",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-ai-studio/priority",
+    "provider": "Google AI Studio",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000135",
+     "completion": "0.00000675",
+     "image": "0.00000135",
+     "audio": "0.00000135",
+     "input_audio_cache": "0.000000135",
+     "web_search": "0.014",
+     "internal_reasoning": "0.00000675",
+     "input_cache_read": "0.000000135",
+     "input_cache_write": "0.000000075",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "google-vertex/us",
+    "provider": "Google",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000825",
+     "completion": "0.000004125",
+     "image": "0.000000825",
+     "audio": "0.000000825",
+     "input_audio_cache": "0.0000000825",
+     "web_search": "0.014",
+     "internal_reasoning": "0.000004125",
+     "input_cache_read": "0.0000000825",
+     "input_cache_write": "0.0000000416666666666667",
+     "discount": 0
+    },
+    "supports_implicit_caching": true,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   }
+  ],
+  "x-ai/grok-4.5": [
+   {
+    "tag": "xai/zdr",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "web_search": "0.005",
+     "input_cache_read": "0.0000003",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000004",
+       "completion": "0.000012",
+       "input_cache_read": "0.0000006"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "web_search": "0.005",
+     "input_cache_read": "0.0000003",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000004",
+       "completion": "0.000012",
+       "input_cache_read": "0.0000006"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai/zdr/priority",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.000012",
+     "web_search": "0.005",
+     "input_cache_read": "0.0000006",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000008",
+       "completion": "0.000024",
+       "input_cache_read": "0.0000012"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai/priority",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.000012",
+     "web_search": "0.005",
+     "input_cache_read": "0.0000006",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000008",
+       "completion": "0.000024",
+       "input_cache_read": "0.0000012"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   }
+  ],
+  "x-ai/grok-4.7": [
+   {
+    "tag": "xai/zdr",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "web_search": "0.005",
+     "input_cache_read": "0.0000005",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000004",
+       "completion": "0.000012",
+       "input_cache_read": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "web_search": "0.005",
+     "input_cache_read": "0.0000005",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000004",
+       "completion": "0.000012",
+       "input_cache_read": "0.000001"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai/zdr/us",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000022",
+     "completion": "0.0000066",
+     "web_search": "0.005",
+     "input_cache_read": "0.00000055",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.0000044",
+       "completion": "0.0000132",
+       "input_cache_read": "0.0000011"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai/zdr/priority",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.000012",
+     "web_search": "0.005",
+     "input_cache_read": "0.000001",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000008",
+       "completion": "0.000024",
+       "input_cache_read": "0.000002"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   },
+   {
+    "tag": "xai/priority",
+    "provider": "xAI",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000004",
+     "completion": "0.000012",
+     "web_search": "0.005",
+     "input_cache_read": "0.000001",
+     "discount": 0,
+     "overrides": [
+      {
+       "min_prompt_tokens": 200000,
+       "prompt": "0.000008",
+       "completion": "0.000024",
+       "input_cache_read": "0.000002"
+      }
+     ]
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 450000
+   }
+  ],
+  "z-ai/glm-5.3": [
+   {
+    "tag": "wafer/us",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000000049",
+     "completion": "0.00000339",
+     "input_cache_read": "0.000000048",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "relace",
+    "provider": "Relace",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000000552",
+     "completion": "0.000012",
+     "input_cache_read": "0.0000000513",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "morph/fp8",
+    "provider": "Morph",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000000095",
+     "completion": "0.000003553",
+     "input_cache_read": "0.000000108",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "inference-net/fp4",
+    "provider": "InferenceNet",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000001",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000005",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "reka",
+    "provider": "Reka",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000014",
+     "completion": "0.0000042",
+     "input_cache_read": "0.000000105",
+     "discount": 0.3
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "makora/fp4",
+    "provider": "Makora",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.00000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.0000001",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "wafer",
+    "provider": "Wafer",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000017",
+     "completion": "0.00000339",
+     "input_cache_read": "0.00000016",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "akashml/fp8",
+    "provider": "AkashML",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000019",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000019",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "sail-research/us",
+    "provider": "Sail Research",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.0000034",
+     "input_cache_read": "0.00000015",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "sail-research/fp8",
+    "provider": "Sail Research",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000002",
+     "completion": "0.0000034",
+     "input_cache_read": "0.00000015",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "deepinfra/fp4",
+    "provider": "DeepInfra",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000005625",
+     "completion": "0.0000025",
+     "input_cache_read": "0.000000125",
+     "discount": 0.375
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "inceptron/fp4",
+    "provider": "Inceptron",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000006",
+     "completion": "0.00000339",
+     "input_cache_read": "0.0000002",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "novita/fp8",
+    "provider": "Novita",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000007",
+     "completion": "0.0000022",
+     "input_cache_read": "0.00000013",
+     "discount": 0.5
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "decart/fp4",
+    "provider": "Decart",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000007716",
+     "completion": "0.0000024251",
+     "input_cache_read": "0.0000001955",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "phala",
+    "provider": "Phala",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000084",
+     "completion": "0.00000264",
+     "input_cache_read": "0.000000156",
+     "discount": 0.4
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "digitalocean",
+    "provider": "DigitalOcean",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000091",
+     "completion": "0.00000286",
+     "input_cache_read": "0.000000169",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 128000
+   },
+   {
+    "tag": "gmicloud/fp8",
+    "provider": "GMICloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000098",
+     "completion": "0.00000308",
+     "input_cache_read": "0.000000182",
+     "discount": 0.3
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "baidu/fp8",
+    "provider": "Baidu",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000011186",
+     "completion": "0.0000035156",
+     "input_cache_read": "0.00000020774",
+     "discount": 0.201
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "siliconflow/fp8",
+    "provider": "SiliconFlow",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000112",
+     "completion": "0.00000352",
+     "input_cache_read": "0.000000208",
+     "discount": 0.2
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "io-net/fp8",
+    "provider": "Io Net",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.00000115",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "alibaba",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000119",
+     "completion": "0.00000374",
+     "input_cache_read": "0.000000238",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "friendli",
+    "provider": "Friendli",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.00000126",
+     "completion": "0.00000396",
+     "input_cache_read": "0.000000234",
+     "discount": 0.1
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "mistral/zdr",
+    "provider": "Mistral",
+    "quantization": "nvfp4",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000014",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "baseten/fp4",
+    "provider": "BaseTen",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000014",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "mistral/nvfp4",
+    "provider": "Mistral",
+    "quantization": "nvfp4",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000014",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "nebius/fp4",
+    "provider": "Nebius",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 921600
+   },
+   {
+    "tag": "crusoe/fp4",
+    "provider": "Crusoe",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "primeintellect",
+    "provider": "PrimeIntellect",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "venice",
+    "provider": "Venice",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0.2
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "together",
+    "provider": "Together",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943717
+   },
+   {
+    "tag": "parasail/fp8",
+    "provider": "Parasail",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "modal",
+    "provider": "Modal",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "baseten/fp4",
+    "provider": "BaseTen",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000014",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "fireworks",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "cloudflare",
+    "provider": "Cloudflare",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "atlas-cloud/fp8",
+    "provider": "AtlasCloud",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "z-ai/fp8",
+    "provider": "Z.AI",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000014",
+     "completion": "0.0000044",
+     "input_cache_read": "0.00000026",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "mistral/nvfp4",
+    "provider": "Mistral",
+    "quantization": "nvfp4",
+    "pricing": {
+     "prompt": "0.00000154",
+     "completion": "0.00000484",
+     "input_cache_read": "0.000000154",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "fireworks/fast",
+    "provider": "Fireworks",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000021",
+     "completion": "0.0000066",
+     "input_cache_read": "0.00000039",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 943718
+   },
+   {
+    "tag": "baseten/fast",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000021",
+     "completion": "0.0000066",
+     "input_cache_read": "0.00000021",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "baseten/fast",
+    "provider": "BaseTen",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.0000021",
+     "completion": "0.0000066",
+     "input_cache_read": "0.00000021",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "alibaba/fast",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.0000028",
+     "completion": "0.0000088",
+     "input_cache_read": "0.00000056",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   }
+  ],
+  "qwen/qwen3.8-2.4t-a95b": [
+   {
+    "tag": "novita",
+    "provider": "Novita",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.00000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "alibaba",
+    "provider": "Alibaba",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.00000025",
+     "input_cache_write": "0.0000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "siliconflow/fp8",
+    "provider": "SiliconFlow",
+    "quantization": "fp8",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.00000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "venice",
+    "provider": "Venice",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.00000025",
+     "discount": 0.2
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 65536
+   },
+   {
+    "tag": "modal",
+    "provider": "Modal",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.00000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 262144
+   },
+   {
+    "tag": "deepinfra/fp4",
+    "provider": "DeepInfra",
+    "quantization": "fp4",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.0000002",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 131072
+   },
+   {
+    "tag": "together",
+    "provider": "Together",
+    "quantization": "unknown",
+    "pricing": {
+     "prompt": "0.000002",
+     "completion": "0.000006",
+     "input_cache_read": "0.00000025",
+     "discount": 0
+    },
+    "supports_implicit_caching": false,
+    "reasoning_effort_listed": true,
+    "max_completion_tokens": 909000
+   }
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+# keep LF everywhere, independent of core.autocrlf
+* text=auto eol=lf
+*.gz binary
+*.pdf binary
+*.png binary
